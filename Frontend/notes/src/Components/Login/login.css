@@ -1,0 +1,40 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    background-color: #FDFBEE;
+  }
+
+  .main{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: #FE4F2D;
+  }
+
+  h1 {
+    font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+  }
+
+  .ff {
+     
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  
+  }
+
+  .bn{
+    color: #ff2a00;
+    font-weight: bold;
+  }
+
+input[type="email"], input[type="password"] {
+    width: 100%; /* Makes the input fields span the container width */
+    box-sizing: border-box; /* Includes padding and border within the width */
+    padding: 10px; /* Optional, for better spacing */
+    margin-bottom: 15px; /* Optional, for spacing between fields */
+}
