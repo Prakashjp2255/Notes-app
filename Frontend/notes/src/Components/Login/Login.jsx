@@ -8,7 +8,7 @@ const login = () => {
       <Header/>
     <div className=" flex justify-center align-middle mr-auto h-screen items-center ">
       <div className=" main  py-14 px-24  rounded-md  m-auto ">
-        <h1 className="text-2xl mb-6">Welcome to Login Page</h1>
+        <h1 className=" font-design text-2xl mb-6">Welcome to Login Page</h1>
 
         <div className=" ff  mt-7 ">
           <form action="">
@@ -41,7 +41,7 @@ const login = () => {
             </div>
             <p className="text-yellow-300">
               Not registered Yet ? 
-              <Link to="/Signup" className="btn btn-primary px-2 text-white">
+              <Link to="/Signup" className="btn btn-primary px-2 text-white underline">
               Signup
               </Link>
             </p>

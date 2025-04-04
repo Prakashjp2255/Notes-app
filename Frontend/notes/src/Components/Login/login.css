@@ -9,7 +9,7 @@ html, body, #root {
     background-color: #FE4F2D;
   }
 
-  h1 {
+  .font-design {
     font-family: "Nabla", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;

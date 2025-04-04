@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
-    <div className='  flex gap-4 items-center '>
+    <div className=' kk  flex gap-4 items-center '>
         <div className=' lol w-12 h-12 flex items-center rounded-3xl justify-center '> 
             {getInitials("Jayavvfv dvvf")}
              </div>

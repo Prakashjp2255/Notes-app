@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 @tailwind base;
 @tailwind components;
@@ -16,6 +22,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@layer components {
+  .icon-btn{
+    @apply text-xl text-slate-300 cursor-pointer hover:text-orange-300;
+  }
+  
+  .input-label{
+    @apply text-xs text-brightorange
+  }
 }
 
 
