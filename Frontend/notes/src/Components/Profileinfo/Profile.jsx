@@ -10,7 +10,7 @@ const Profile = () => {
             {getInitials("Jayavvfv dvvf")}
              </div>
             <div>
-                <p>Prakash</p>
+                <p className='font-design'>Prakash</p>
                 <button className='bb text-sm underline ' >
                   <Link to= "/login">
                     Logout
