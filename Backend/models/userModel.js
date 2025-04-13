@@ -13,10 +13,15 @@ const signup = new mongoose.Schema( {
         type:String,
         required :true
     },
+    // createdOn: {
+    //     type:Date,
+    //     default : new Date().getTime() 
+    // },
 },
 
 {
     timestamps:true
 });
+const userDetails = mongoose.model('Signin', signup);
 
-module.exports =mongoose.model( 'Signin' , signup);
+module.exports = userDetails;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../Header/Header';
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 const Signup = () => {
 
@@ -11,6 +12,17 @@ const Signup = () => {
 
   const handleSignup =async (e) => {
     e.preventDefault();
+
+    try{
+      const res = await axios.post("http://localhost:5000/admin/signup" , {
+        name,
+        email,
+        password
+      }) 
+
+    }catch(error){
+      setError(error.response?.data?.error || "❌ signup Failed");
+    }
   };
 
   return (
@@ -29,6 +41,8 @@ const Signup = () => {
               </label>
               <input
                 type="text"
+                value={email}
+                onChange={(e) =>  setEmail(e.target.value)}
                 placeholder="Enter your name"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-50"
               />
