@@ -18,6 +18,7 @@ const corsOptions = {
 
 //routes 
 const signinRoute = require('./routes/userRoutes.js');
+const notesRoute = require('./routes/noteRoutes.js');
 // load environment variables from env file
 dotenv.config();
 
@@ -72,5 +73,6 @@ function makePostRequest(url, token, payload) {
 
   app.use(cors(corsOptions));
   app.use ('/admin' , signinRoute);
+  app.use ('/admin', notesRoute) 
   
  

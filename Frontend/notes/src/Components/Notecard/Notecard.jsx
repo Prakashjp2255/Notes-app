@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlinePushpin } from "react-icons/ai";
 import { IoMdCreate } from "react-icons/io";
 import { MdDelete } from "react-icons/md";
-
+import ScrollingImages from "../Left/ScrollingImages";
 
 const Notecard = ({
   title,
@@ -22,19 +22,22 @@ const Notecard = ({
           <span className="text-xs ">{date}</span>
         </div>
 
-        <AiOutlinePushpin className={`icon-btn ${ispinned ? 'text-orange-200' : 'text-slate-300'}`} onClick={onPinNote} />
+        <AiOutlinePushpin
+          className={`icon-btn ${
+            ispinned ? "text-orange-200" : "text-slate-300"
+          }`}
+          onClick={onPinNote}
+        />
       </div>
 
-      <p className="text-xs mt-2 "> {content?.slice(0,60)} </p>
-      <div className="flex items-center justify-between mt-2"> 
-      <div className="text-xs font-light">
-        {tags}
-      </div>
+      <p className="text-xs mt-2 "> {content?.slice(0, 60)} </p>
+      <div className="flex items-center justify-between mt-2">
+        <div className="text-xs font-light">{tags}</div>
 
-      <div className="flex items-center gap-3">
-        <IoMdCreate className=" hover:text-orange-500" onClick={onEdit} />
-        <MdDelete className=" hover:text-orange-500" onClick={onDelete} />
-      </div>
+        <div className="flex items-center gap-3">
+          <IoMdCreate className=" hover:text-orange-500" onClick={onEdit} />
+          <MdDelete className=" hover:text-orange-500" onClick={onDelete} />
+        </div>
       </div>
     </div>
   );

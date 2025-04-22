@@ -12,10 +12,12 @@ import Login from './Components/Login/Login.jsx' ;
 import Signup from './Components/Signup/Signup.jsx';
 import Home from './Components/Home/Home.jsx';
 import AddEditNotes from './Components/Notecard/AddEditNotes.jsx';
-
+import Modal from 'react-modal';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+Modal.setAppElement('#root');
+
 root.render(
 
   <BrowserRouter>

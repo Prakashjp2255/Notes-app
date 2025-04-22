@@ -24,10 +24,11 @@ const Login = () => {
       });
       console.log("API response:", res.data);
       localStorage.setItem("token", res.data.token);
+      localStorage.setItem("userId", res.data.user._id); 
       setError("✅ Login successful!");
       navigate("/notes");
     } catch (error) {
-      setError(error.response?.data?.error || "❌ Login Failed");
+      setError(error.response?.data?.error || "Signup First ");
     }
   };
 
@@ -39,8 +40,7 @@ const Login = () => {
           <h1 className=" font-design text-white text-2xl mb-6 font-semibold text-center">
             Welcome to Login Page
           </h1>
-
-          {error && <p className="text-center text-yellow-300 mb-4">{error}</p>}
+          {error && <p className=" ff text-center text-white mb-4">{error}</p>}
           <div className=" ff  mt-7 ">
             <form onSubmit={handleLogin}>
               <div className="mb-4">
